@@ -231,8 +231,10 @@ img {
 /* --------------------- Section Possibilities -------------------- */
 
 .section-possibilities {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  /* padding-top: 120px;
+  padding-bottom: 120px; */
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .list-of-possibilities {
@@ -246,7 +248,7 @@ img {
   /* width: calc((100% - 72px) / 4); */
 }
 
-.possibilities-icon-container {
+/* .possibilities-icon-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -256,7 +258,7 @@ img {
   height: 112px;
   background: rgba(244, 244, 253, 1);
   margin-bottom: 8px;
-}
+} */
 
 .possibilities-icon {
 }
@@ -861,4 +863,20 @@ img {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+
+/* ----------------- 768px-------------------- */
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .list-of-possibilities {
+    gap: 24px;
+  }
+
+  .possibilities-item {
+    width: calc((100% - 24px) / 2);
+  }
 }
