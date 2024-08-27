@@ -231,8 +231,6 @@ img {
 /* --------------------- Section Possibilities -------------------- */
 
 .section-possibilities {
-  /* padding-top: 120px;
-  padding-bottom: 120px; */
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -240,33 +238,23 @@ img {
 .list-of-possibilities {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 24px; */
   gap: 72px;
 }
 
 .possibilities-item {
-  /* width: calc((100% - 72px) / 4); */
 }
 
-/* .possibilities-icon-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(142, 143, 153, 1);
-  border-radius: 4px;
-  width: 264px;
-  height: 112px;
-  background: rgba(244, 244, 253, 1);
-  margin-bottom: 8px;
-} */
+.possibilities-icon-container {
+}
 
 .possibilities-icon {
 }
 
 .possibilities-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 120%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 111%;
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
@@ -865,7 +853,7 @@ img {
   pointer-events: auto;
 }
 
-/* ----------------- 768px-------------------- */
+/* ----------------- Section Possibilities  (768px) -------------------- */
 
 @media screen and (min-width: 768px) {
   .container {
@@ -878,5 +866,47 @@ img {
 
   .possibilities-item {
     width: calc((100% - 24px) / 2);
+  }
+
+  .possibilities-subtitle {
+    text-align: left;
+  }
+}
+
+/* ----------------- Section Possibilities  (1158px) -------------------- */
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+  }
+
+  .list-of-possibilities {
+  }
+
+  .section-possibilities {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .possibilities-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .possibilities-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(142, 143, 153, 1);
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background: rgba(244, 244, 253, 1);
+    margin-bottom: 8px;
+  }
+
+  .possibilities-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
   }
 }
