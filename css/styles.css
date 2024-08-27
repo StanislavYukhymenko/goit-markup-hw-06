@@ -245,6 +245,7 @@ img {
 }
 
 .possibilities-icon-container {
+  display: none;
 }
 
 .possibilities-icon {
@@ -273,8 +274,8 @@ img {
 
 .section-team {
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .team-container {
@@ -294,6 +295,9 @@ img {
 
 .team-list {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 24px;
 }
 
@@ -305,6 +309,7 @@ img {
   padding: 0px 0px 32px 0px;
   width: 264px;
   height: 428px;
+  margin-bottom: 72px;
 }
 
 .team-img {
@@ -853,7 +858,9 @@ img {
   pointer-events: auto;
 }
 
-/* ----------------- Section Possibilities  (768px) -------------------- */
+/* ------------------------ Version (768px) ----------------------------- */
+
+/* ------------- Section Possibilities  (768px) ------------- */
 
 @media screen and (min-width: 768px) {
   .container {
@@ -871,9 +878,17 @@ img {
   .possibilities-subtitle {
     text-align: left;
   }
+
+  /* ---------------- Section Team (768px) --------------- */
+
+  .team-item {
+    margin-bottom: 64px;
+  }
 }
 
-/* ----------------- Section Possibilities  (1158px) -------------------- */
+/* ------------------------ Version (1158px) ----------------------------- */
+
+/* ---------- Section Possibilities  (1158px) ------------ */
 
 @media screen and (min-width: 1158px) {
   .container {
@@ -908,5 +923,16 @@ img {
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
+  }
+
+  /* --------------- Section Team (1158px) -------------- */
+
+  .section-team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .team-list {
+    flex-wrap: nowrap;
   }
 }
