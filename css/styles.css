@@ -174,7 +174,6 @@ img {
 
 .hero-section {
   background-color: #2e2f42;
-  /* padding: 188px 0; */
   padding: 72px 0;
   margin: 0 auto;
 
@@ -182,7 +181,7 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/people-office-mob.jpg);
 
   background-position: center;
   background-repeat: no-repeat;
@@ -200,14 +199,6 @@ img {
   margin: auto;
   margin-bottom: 72px;
   max-width: 216px;
-  /* font-weight: 700;
-  font-size: 56px;
-  line-height: 107%;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #fff; */
-  /* margin-bottom: 48px; */
-  /* max-width: 496px; */
 }
 
 .hero-button {
@@ -871,12 +862,30 @@ img {
 
 /* ------------------------ Version (768px) ----------------------------- */
 
-/* ------------- Section Possibilities  (768px) ------------- */
-
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
+
+  /* ----------------- Hero Section (768px) ------------------- */
+
+  .hero-section {
+    padding: 112px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-tab.jpg);
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 107%;
+    margin-bottom: 36px;
+    max-width: 496px;
+  }
+
+  /* ------------- Section Possibilities  (768px) ------------- */
 
   .list-of-possibilities {
     gap: 24px;
@@ -899,15 +908,27 @@ img {
 
 /* ------------------------ Version (1158px) ----------------------------- */
 
-/* ---------- Section Possibilities  (1158px) ------------ */
-
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
   }
 
-  .list-of-possibilities {
+  /* ----------------- Hero Section (1158px) ------------------- */
+
+  .hero-section {
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
   }
+
+  .hero-title {
+    margin-bottom: 48px;
+  }
+
+  /* ---------- Section Possibilities  (1158px) ------------ */
 
   .section-possibilities {
     padding-top: 120px;
@@ -946,12 +967,12 @@ img {
   .team-list {
     flex-wrap: nowrap;
   }
+}
 
-  /* ---------------------  @media -------------------------- */
+/* ---------------------  @media -------------------------- */
 
-  @media screen and (min-width: 768px) and (max-width: 1157px) {
-    .section-team > .container {
-      max-width: 584px;
-    }
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .section-team > .container {
+    max-width: 584px;
   }
 }
