@@ -392,8 +392,8 @@ img {
 /* --------------------- Section Portfolio ------------------- */
 
 .section-portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .portfolio-title {
@@ -435,6 +435,8 @@ img {
 }
 
 .portfolio-img {
+  width: 288px;
+  height: 280px;
 }
 
 .portfolio-img-text {
@@ -928,6 +930,13 @@ img {
   .team-item {
     margin-bottom: 64px;
   }
+
+  /* --------------------- Section Portfolio (768px) ------------------- */
+
+  .portfolio-img {
+    width: 356px;
+    height: 300px;
+  }
 }
 
 /* ------------------------ Version (1158px) ----------------------------- */
@@ -1003,6 +1012,13 @@ img {
   .team-list {
     flex-wrap: nowrap;
   }
+
+  /* --------------------- Section Portfolio (1158px) ------------------- */
+
+  .section-portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 /* ---------------------  @media -------------------------- */
@@ -1010,5 +1026,9 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1157px) {
   .section-team > .container {
     max-width: 584px;
+  }
+
+  .portfolio-list {
+    gap: 72px 24px;
   }
 }
