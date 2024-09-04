@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a href="./index.html" class="heder-logo"
@@ -49,8 +49,51 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-mobail-btn">
+          <svg class="menu-mobail-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-group"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mobail-menu">
+        <button type="button" class="mobail-btn-closed">
+          <svg class="mobail-icon-btn-closed" width="8" height="8">
+            <use href="./images/icons.svg#icon-closed"></use>
+          </svg>
+        </button>
+        <div>
+          <nav class="mob-header-navigation">
+            <ul class="mob-heder-menu-list">
+              <li class="mob-heder-menu-item">
+                <a href="./index.html" class="mob-heder-menu-link">Studio</a>
+              </li>
+              <li class="mob-heder-menu-item">
+                <a href="" class="mob-heder-menu-link">Portfolio</a>
+              </li>
+              <li class="mob-heder-menu-item">
+                <a href="" class="mob-heder-menu-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mob-header-navigation-address">
+            <ul class="mob-header-navigation-list">
+              <li class="mob-header-navigation-item">
+                <a
+                  class="mob-header-navigation-link"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com
+                </a>
+              </li>
+              <li class="mob-header-navigation-item">
+                <a class="mob-header-navigation-link" href="tel:+110001111111"
+                  >+11 (000) 111-11-11
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="hero-section">
         <div class="container">
@@ -328,8 +371,6 @@
                     class="portfolio-img"
                     src="./images/banking-app.jpg"
                     alt="Banking App"
-                    width="360"
-                    height="300"
                   />
                 </picture>
                 <p class="portfolio-img-text">
@@ -371,8 +412,6 @@
                     class="portfolio-img"
                     src="./images/cashless-payment.jpg"
                     alt="Cashless Payment"
-                    width="360"
-                    height="300"
                   />
                 </picture>
                 <p class="portfolio-img-text">
@@ -414,8 +453,6 @@
                     class="portfolio-img"
                     src="./images/meditation-app.jpg"
                     alt="Meditation App"
-                    width="360"
-                    height="300"
                   />
                 </picture>
                 <p class="portfolio-img-text">
@@ -457,8 +494,6 @@
                     class="portfolio-img"
                     src="./images/taxi-service.jpg"
                     alt="Taxi Service"
-                    width="360"
-                    height="300"
                   />
                 </picture>
                 <p class="portfolio-img-text">
@@ -500,8 +535,6 @@
                     class="portfolio-img"
                     src="./images/screen-illustrations.jpg"
                     alt="Screen Illustrations"
-                    width="360"
-                    height="300"
                   />
                 </picture>
                 <p class="portfolio-img-text">
@@ -543,8 +576,6 @@
                     class="portfolio-img"
                     src="./images/online-courses.jpg"
                     alt="Online Courses"
-                    width="360"
-                    height="300"
                   />
                 </picture>
                 <p class="portfolio-img-text">
