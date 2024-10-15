@@ -990,6 +990,7 @@ img {
 }
 
 .policy-link {
+  padding-left: 18px;
   line-height: 133%;
   text-decoration: underline;
   text-decoration-skip-ink: none;
@@ -1027,16 +1028,27 @@ img {
   }
   /* ---------------------- Header (768px) ------------------------ */
 
+  .header {
+    padding: 0;
+  }
+
   .heder-menu-list {
+    display: flex;
+  }
+
+  .heder-menu-link {
     display: flex;
   }
 
   .header-navigation-address {
     display: flex;
+    padding-top: 16px;
   }
 
-  .header-navigation-item:not(:last-child) {
-    margin-bottom: 12px;
+  .header-navigation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
 
   .menu-mobail-btn {
