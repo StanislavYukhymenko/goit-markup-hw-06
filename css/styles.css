@@ -1045,12 +1045,6 @@ img {
     padding-top: 16px;
   }
 
-  .header-navigation-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
   .menu-mobail-btn {
     display: none;
   }
@@ -1299,6 +1293,12 @@ img {
   .section-team > .container,
   .section-footer > .container {
     max-width: 584px;
+  }
+
+  .header-navigation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
 
   .portfolio-list {
